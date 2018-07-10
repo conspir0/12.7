@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.board {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 80%;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.board h1 {
+  margin: 20px;
+}
+
+.board button {
+  position: absolute;
+  top: 0;
+  padding: 3px;
+  background-color: #FDF2E9;
+  border: 1px solid #F7DC6F;
+}
+
+.board button:hover {
+  background: #F7DC6F;
+}
+
+.board button.create-column {
+  position: relative;
+  width: 150px;
+  padding: 10px 30px;
+  margin: 10px auto;
+}
+
+.board .column-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.board .column-container div {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  border: 1px solid #FDF2E9;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #FDF2E9;
+}
+
+.board .column-container div .column {
+  position: relative;
+  padding: 0;
+}
+
+.board .column-container div .column h2 {
+  margin-top: 30px;
+}
+
+.board .column-container div .column ul {
+  list-style-type: none;
+  min-height: 250px;
+}
+
+.board .column-container div .column ul .card {
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+  min-height: 100px;
+  background-color: #F9E79F;
+}
+
+.board .column-container div .column ul .card .btn-delete {
+  top: 5px;
+  right: 5px;
+  background-color: #F9E79F;
+}
+
+.board .column-container div .column ul .card .btn-delete:hover {
+  border: 1px solid #000;
+}
+
+.board .column-container div .column .add-card {
+  left: 0;
+}
+
+.board .column-container div .column .btn-delete {
+  right: 0;
+}
+/*# sourceMappingURL=style.prefixed.css.map */
